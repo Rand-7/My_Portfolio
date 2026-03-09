@@ -1,0 +1,113 @@
+/* Education.css */
+.edu-section {
+  padding: 100px 10%;
+  text-align: center;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  background-color: var(--bg-main);
+}
+
+
+.edu-subtitle {
+  color: #0ea5e9;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.edu-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #18181b;
+  margin-bottom: 60px;
+  color: var(--text-primary)
+}
+
+
+.edu-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.edu-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  text-align: left;
+}
+
+
+.edu-item {
+  display: flex;
+  gap: 25px;
+  align-items: flex-start;
+}
+
+.timeline-line {
+  width: 20px;
+  height: 180px;
+  object-fit: contain;
+}
+
+.edu-info h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #18181b;
+  margin-bottom: 10px;
+  color: var(--text-primary)
+}
+
+.edu-info p {
+  color: #71717a;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+
+.bg-decor-right {
+  position: absolute;
+  top: 10%;
+  right: 0;
+  width: 150px;
+  pointer-events: none;
+}
+
+.bg-decor-left {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  width: 120px;
+  pointer-events: none;
+  transform: rotate(180deg);
+}
+
+
+.scroll-top-btn {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  background-color: #0ea5e9;
+  color: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 15px rgba(14, 165, 233, 0.3);
+}
+
+
+@media (max-width: 768px) {
+  .edu-grid {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,264 @@
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    padding: 0 10%;
+    overflow: hidden;
+    background-color: var(--bg-main);
+    overflow-x: hidden; 
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 2;
+    max-width: 1200px; /* أو حسب تصميمك */
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 500px;
+    text-align: left;
+    color: var(--text-primary)
+}
+
+.hero-subtitle {
+    color: #1e293b;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--text-primary)
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    color: #0f172a;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: var(--text-primary)
+}
+
+.hero-content h1 span {
+    color: #0f172a; 
+    color: var(--text-primary)
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    color: #64748b;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.hero-image-wrapper {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-profile-img {
+    width: 100%;
+    max-width: 450px; 
+    height: auto;
+    z-index: 10;
+    position: relative;
+    object-fit: cover;
+    border-radius: 60%;
+}
+
+.image-bg-circle {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: #e2e0ff;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.download-btn {
+    padding: 14px 30px;
+    background-color: #f8fafc;
+    color: #0f172a;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #ffffff;
+    transform: translateY(-3px);
+}
+
+.custom-divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+.dotted-line-img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.shape {
+    position: absolute;
+    border-radius: 8px;
+    z-index: 2;
+}
+
+.shape-1 {
+    width: 40px;
+    height: 40px;
+    background: #5b45cc;
+    top: 10%;
+    right: 20%;
+    transform: rotate(20deg);
+}
+
+.shape-2 {
+    width: 30px;
+    height: 30px;
+    background: #0ea5e9;
+    bottom: 20%;
+    right: 5%;
+    transform: rotate(-15deg);
+}
+
+@media (max-width: 1200px) {
+    .hero-section {
+        padding: 0 5%;
+    }
+    .hero-content h1 {
+        font-size: 3.5rem;
+    }
+    .main-profile-img {
+        max-width: 400px;
+    }
+    .image-bg-circle {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-section {
+        padding: 120px 5% 80px; 
+        min-height: auto;
+    }
+
+    .hero-container {
+        gap: 30px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .main-profile-img {
+        max-width: 320px;
+    }
+
+    .image-bg-circle {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .shape-1 { right: 10%; top: 5%; }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 100px 20px 60px;
+    }
+
+    .hero-container {
+        flex-direction: column-reverse; 
+        text-align: center;
+        gap: 50px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        margin-bottom: 25px;
+    }
+
+    .hero-image-wrapper {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .main-profile-img {
+        max-width: 260px; 
+    }
+
+    .image-bg-circle {
+        width: 240px;
+        height: 240px;
+    }
+
+    .shape {
+        display: none; 
+    }
+
+    .custom-divider {
+        bottom: -1px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .hero-section {
+        padding: 80px 15px 40px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .main-profile-img {
+        max-width: 220px;
+    }
+
+    .image-bg-circle {
+        width: 200px;
+        height: 200px;
+    }
+
+    .download-btn {
+        width: 100%;
+        padding: 12px 20px;
+    }
+}
